@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="image_src" content="" />
+    <meta name="author" content="Mukhammadjonov Javlon" />
+
+    <meta property="og:title" content="Naqsh - Soft" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Naqsh - Soft" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- All css -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        crossorigin="anonymous" />
+
+    <title>Naqsh - Soft</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a class="nav__link" href="#">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+                <ul class="nav__list">
+                    <li>
+                        <a href="#about">Biz haqimizda</a>
+                    </li>
+                    <li>
+                        <a href="#">Xizmatlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Mijozlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Bog’lanish</a>
+                    </li>
+                </ul>
+                <ul class="nav__contact">
+                    <li>
+                        <a href="tel:+998999034440">
+                            <i class="fa-solid fa-phone"></i>
+                            +998 99 903 44 40
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropbtn" id="selectedItemBtn">
+                                <img src='./assets/img/uz.png' alt="uz" id="selectedItemImage">
+                                <span id="selectedItemText">uz</span>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="selectItem('uz', './assets/img/uz.png')">
+                                    <img src="./assets/img/uz.png" alt="uz"> uz
+                                </a>
+                                <a href="#" onclick="selectItem('ru', './assets/img/logo.png')">
+                                    <img src="./assets/img/logo.png" alt="ru"> ru
+                                </a>
+                                <a href="#" onclick="selectItem('en', './assets/img/uz.png')">
+                                    <img src="./assets/img/uz.png" alt="en"> en
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav__contact__btn" href="#">Mijoz bo’lish</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+
+        </section>
+
+        <section class="about" id="about">
+
+        </section>
+
+        <!-- Scroll Up Start -->
+        <div id="scrollUp" class="scrollUp">
+            <span>&uarr;</span>
+        </div>
+        <!-- Scroll Up End -->
+    </main>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
