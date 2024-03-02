@@ -33,54 +33,62 @@
                 <a class="nav__link" href="#">
                     <img src="./assets/img/logo.png" alt="">
                 </a>
-                <ul class="nav__list">
-                    <li>
-                        <a href="#about">Biz haqimizda</a>
-                    </li>
-                    <li>
-                        <a href="#">Xizmatlar</a>
-                    </li>
-                    <li>
-                        <a href="#">Mijozlar</a>
-                    </li>
-                    <li>
-                        <a href="#">Bog’lanish</a>
-                    </li>
-                </ul>
-                <ul class="nav__contact">
-                    <li>
-                        <a href="tel:+998999034440">
-                            <i class="fa-solid fa-phone"></i>
-                            +998 99 903 44 40
-                        </a>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <div class="dropbtn" id="selectedItemBtn">
-                                <img src='./assets/img/uz.png' alt="uz" id="selectedItemImage">
-                                <span id="selectedItemText">uz</span>
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#about">Biz haqimizda</a>
+                        </li>
+                        <li>
+                            <a href="#">Xizmatlar</a>
+                        </li>
+                        <li>
+                            <a href="#">Mijozlar</a>
+                        </li>
+                        <li>
+                            <a href="#">Bog’lanish</a>
+                        </li>
+                    </ul>
+                    <ul class="nav__contact">
+                        <li>
+                            <a href="tel:+998999034440">
+                                <i class="fa-solid fa-phone"></i>
+                                +998 99 903 44 40
+                            </a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn" id="selectedItemBtn">
+                                    <img src='./assets/img/uz.png' alt="uz" id="selectedItemImage">
+                                    <span id="selectedItemText">uz</span>
+                                </div>
+                                <div class="dropdown-content">
+                                    <a href="#" onclick="selectItem('uz', './assets/img/uz.png')">
+                                        <img src="./assets/img/uz.png" alt="uz"> uz
+                                    </a>
+                                    <a href="#" onclick="selectItem('ru', './assets/img/logo.png')">
+                                        <img src="./assets/img/logo.png" alt="ru"> ru
+                                    </a>
+                                    <a href="#" onclick="selectItem('en', './assets/img/uz.png')">
+                                        <img src="./assets/img/uz.png" alt="en"> en
+                                    </a>
+                                </div>
                             </div>
-                            <div class="dropdown-content">
-                                <a href="#" onclick="selectItem('uz', './assets/img/uz.png')">
-                                    <img src="./assets/img/uz.png" alt="uz"> uz
-                                </a>
-                                <a href="#" onclick="selectItem('ru', './assets/img/logo.png')">
-                                    <img src="./assets/img/logo.png" alt="ru"> ru
-                                </a>
-                                <a href="#" onclick="selectItem('en', './assets/img/uz.png')">
-                                    <img src="./assets/img/uz.png" alt="en"> en
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="nav__contact__btn" href="#">Mijoz bo’lish</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <a class="nav__contact__btn" href="#">Mijoz bo’lish</a>
+                        </li>
+                    </ul>
+
+                <div class="menu" id="menu">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+
             </nav>
         </div>
     </header>
     <main>
+        <div class="opacity"></div>
         <section class="intro">
 
         </section>
