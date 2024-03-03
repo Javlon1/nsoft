@@ -80,7 +80,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--black);
+    background-color: var(--light-green);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -566,12 +566,157 @@ img {
         padding: 20px 0;
         width: 100%;
         height: 100%;
+        background-size: contain;
     }
 }
 
-
-
 .about {
-    height: 100vh;
-    background-color: black;
+    padding: 100px 0;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about__title {
+    font-size: var(--title);
+    color: var(--black);
+}
+
+.about__list1 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__list1__item {
+    position: relative;
+}
+
+.about__list1__item p {
+    font-size: var(--desc);
+    font-weight: 600;
+    position: relative;
+}
+
+.about__list1__item::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    width: 80%;
+    height: 20px;
+    background-color: var(--light-green);
+}
+
+.about__list2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.about__list2__item {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    background-color: var(--white);
+    background-repeat: no-repeat;
+}
+
+.about__list2__item img {
+    width: 50%;
+}
+
+.about__list2__item p {
+    width: 70%;
+    bottom: 20px;
+    font-weight: 600;
+    position: absolute;
+    text-align: center;
+    font-size: var(--desc);
+}
+
+.about__list2__item:nth-child(1) {
+    background-image: url("../img/xizmatlar-bc1.png");
+    background-position: bottom left;
+}
+
+.about__list2__item:nth-child(2) {
+    background-image: url("../img/xizmatlar-bc2.png");
+    background-position: top right;
+}
+
+.about__list2__item:nth-child(3) {
+    background-image: url("../img/xizmatlar-bc3.png");
+    background-position: center;
+}
+
+.about__list2__item:nth-child(4) {
+    background-image: url("../img/xizmatlar-bc4.png");
+    background-position: right;
+}
+
+.about__list2__item:nth-child(5) {
+    background-image: url("../img/xizmatlar-bc5.png");
+    background-position: top left;
+}
+
+.about__list2__item:nth-child(6) {
+    background-image: url("../img/xizmatlar-bc6.png");
+    background-position: bottom;
+}
+
+@media only screen and (max-width: 1199px) {
+    .about__list2__item {
+        width: 28%;
+        height: 250px;
+        background-size: 50%;
+    }
+
+    .about__list2__item:nth-child(3) {
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .about__list2__item {
+        width: 45%;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about__list1__item::before {
+        height: 10px;
+    }
+
+    .about__list2 {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .about__list1 {
+        width: 90%;
+    }
+
+    .about__list2__item {
+        height: 180px;
+    }
+
+    .about__list2__item p {
+        width: auto;
+    }
 }
