@@ -719,3 +719,204 @@ img {
         font-size: 14px;
     }
 }
+
+.service .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.service__title {
+    font-size: var(--title);
+    color: var(--black);
+    text-align: center;
+}
+
+.service__list1 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service__list1__item {
+    position: relative;
+}
+
+.service__list1__item p {
+    font-size: var(--desc);
+    font-weight: 600;
+    position: relative;
+}
+
+.service__list1__item::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    width: 80%;
+    height: 20px;
+    background-color: var(--light-green);
+}
+
+.service__list2 {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service__list2__item {
+    width: 100%;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    background-color: var(--white);
+    background-size: contain;
+}
+
+.service__list2__item h3 {
+    font-size: var(--subTitle);
+    color: var(--black);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.service__list2__item span {
+    position: relative;
+}
+
+.bc::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: -20px;
+    width: 155px;
+    height: 20px;
+    background-color: var(--light-green);
+}
+
+.service__list2__item p {
+    font-size: var(--desc);
+    color: var(--black);
+    font-weight: 600;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.service__list2__item:nth-child(1) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/service-bc1.png"), url("../img/service-bc2.png");
+    background-repeat: no-repeat;
+    background-position: left, right;
+    height: 300px;
+}
+
+.service__list2__item:nth-child(2),
+.service__list2__item:nth-child(3) {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service__list2__item:nth-child(2) {
+    background-image: url("../img/service-bc3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.service__list2__item:nth-child(3) {
+    background-image: url("../img/service-bc4.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.service__list2__item__list {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-image: url("../img/service-bc5.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.service__list2__item__list__item {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.service__list2__item__list__item h3 {
+    font-size: var(--title);
+}
+
+.service__list2__item__list__item p {
+    width: 100%;
+}
+
+
+.service__list2__item:last-child {
+    background-image: url("../img/service-bc6.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.service__list2__item:last-child p {
+    width: 70%;
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .service__list2__item:nth-child(2),
+    .service__list2__item:nth-child(3) {
+        width: 48%;
+    }
+
+    .service__list2__item__list {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .service__list2__item:nth-child(2),
+    .service__list2__item:nth-child(3) {
+        width: 100%;
+    }
+
+    .service__list2__item__list__item {
+        width: 45%;
+    }
+
+    .service__list2__item__list__item h3 {
+        margin: 0;
+    }
+
+    .service__list2__item:last-child {
+        padding: 50px 0;
+    }
+
+    .bc::before {
+        top: 15px;
+    }
+}
