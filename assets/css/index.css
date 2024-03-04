@@ -904,6 +904,12 @@ img {
         width: 100%;
     }
 
+
+    .service__list2__item:nth-child(3) {
+        background-image: url("../img/service-bc3.png");
+        background-position: right;
+    }
+
     .service__list2__item__list__item {
         width: 45%;
     }
